@@ -1,2 +1,2 @@
-# learning_pro_man
+# Learning Product Management
 Notes and stuff from the course
