@@ -101,7 +101,7 @@ class ModelData:
         opp_cost = self.personae.opportunity_cost(persona)
         n_users = self.journeys.population(state = state, persona = persona)
 
-        score = n_users * (raw_benefit - amo_cost + (1. - opp_cost * bad_prob) * good_prob)
+        score = n_users * (raw_benefit + (1. - bad_prob) * opp_cost) / amo_cost
         return score
 
 
